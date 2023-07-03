@@ -139,7 +139,7 @@ main {
 .cards_service {
         display: flex;
         flex-direction: column;
-        /* justify-content: space-around; */
+        
     }
 .cards_service>img {
         width: 80%;
@@ -171,10 +171,30 @@ main {
     background-color: white;
     color: black;
     text-align: center;
-    /* border-radius: 15%; */
-    padding: 1rem;
+    border-radius: 70px;
+    padding: 2rem;
+    margin: 30px 0;
+}
+.arrow_planning {
+    background-color: #9792e4;
+    padding: 20px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.card-strategic> img {
+    margin-bottom: 80px;
 }
 
+.card-strategic> h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+.card-app> h2 {
+    
+    font-weight: bolder;
+    margin: 20px 0;
+}
 
 /* - Testimonial */
 .row_testimonial {
@@ -327,13 +347,15 @@ footer {
     .cards_service {
         display: flex;
         flex-direction: row;
-        /* justify-content: space-around; */
+       
     }
     .cards_service > img {
             align-self: flex-end;
             width: 80%;
     }
-
+    .card-white {
+        margin-bottom: 0;
+    }
     /* Planning */
     .planning {
         display: flex;
@@ -342,6 +364,16 @@ footer {
     }
     .planning> .card-planning:last-child {
         align-self: flex-end;
+    }
+
+    .card-planning {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .card-white {
+        align-items: center;
+        
     }
     .purple>.container {
         width: 1000px;
