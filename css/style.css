@@ -76,30 +76,28 @@ main {
 .cards_header> img {
     width: 100%;
 }
-
-
-
-
-
+/* - Planning */
+.purple {
+    background-color: #9593e6;
+    color: white;
+}
+.planning {
+    padding: 50px 20px;
+}
+.card-planning img {
+    width: 100%;
+    
+}
+.card-white {
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 15%;
+    padding: 1rem;
+}
 
 
 /* Responsive */
-
-/* -- Desktop */
-
-@media screen and (min-width:1160px) {
-
-    .header_menu-mobile {
-        display: none;
-    }
-    .header_menu-desktop {
-        display: block;
-    }
-
-    
-    
-}
-
 /* -- Tablet */
 
 @media screen and (min-width:768px) {
@@ -119,3 +117,28 @@ main {
 
     
 }
+
+/* -- Desktop */
+
+@media screen and (min-width:1160px) {
+
+    .header_menu-mobile {
+        display: none;
+    }
+    .header_menu-desktop {
+        display: block;
+    }
+    .planning {
+        display: flex;
+        gap: 60px;
+
+    }
+    .planning> .card-planning:last-child {
+        align-self: flex-end;
+    }
+    .purple>.container {
+        width: 1000px;
+    }
+    
+}
+
