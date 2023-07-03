@@ -48,7 +48,11 @@ img {
 
 /* CLASSI SEMANTICHE */
 
-/* -- Header */
+/* 
+
+-- Header 
+
+*/
 header {
     background-color: #0084fd;
     color: white;   
@@ -74,7 +78,14 @@ header {
 .header_menu-desktop li {
     display: inline-block;
 }
-/* -- Main */
+
+
+/*
+
+-- Main
+
+*/
+
 main {
     margin-top: 75px;
 }
@@ -155,9 +166,20 @@ main {
     text-align: center;
 }
 
+/* 
 
+---- footer
 
+*/
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 50px;
 
+}
+ .container_footer {
+    width: 100%;
+}
 
 /* 
 
@@ -220,7 +242,12 @@ main {
         width: 600px;
         margin: 0 auto;
     }
+    /* footer */
 
+    .container_footer{
+        width: 400px;
+        margin: 0 auto;
+    }
 
 }
 
