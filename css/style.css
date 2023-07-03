@@ -10,14 +10,15 @@
     padding: 1rem;
 }
 
-header {
-    background-color: #0084fd;
-    color: white;
-
-}
 a {
     text-decoration: none;
     color: currentColor;
+}
+
+.col {
+    padding: 1rem;
+    min-height: 50px;
+    
 }
 /*
 ----------------- DEBUG 
@@ -27,11 +28,26 @@ a {
     border: 1px dashed red;
 }
 
+
+
 /* CLASSI SEMANTICHE */
+
+/* -- Header */
+header {
+    background-color: #0084fd;
+    color: white;   
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 .header_menu-desktop {
     display: none;
@@ -42,12 +58,36 @@ a {
 .header_menu-desktop li {
     display: inline-block;
 }
+/* -- Main */
+main {
+    margin-top: 75px;
+}
+/* - service */
+
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem;
+}
+.card {
+    padding: 1rem;
+    background-color: #b5ddff;
+}
+.cards_header> img {
+    width: 100%;
+}
+
+
+
+
+
+
 
 /* Responsive */
 
 /* -- Desktop */
 
-@media screen and (min-width:1100px) {
+@media screen and (min-width:1160px) {
 
     .header_menu-mobile {
         display: none;
@@ -55,5 +95,27 @@ a {
     .header_menu-desktop {
         display: block;
     }
+
+    
+    
+}
+
+/* -- Tablet */
+
+@media screen and (min-width:768px) {
+    .service .col {
+        width: calc(100% / 3);    
+    }
+    .service> .col:first-child {
+        width: calc((100% / 3) * 2);
+    }
+    .card {
+        height: 100%;
+    }
+    .cards_header {
+        display: flex;
+        justify-content: space-around;
+    }
+
     
 }
