@@ -145,7 +145,15 @@ main {
 }
 
 
-
+/* -- Get started */
+.get-started {
+    background-color: #9792e4;
+    color: white;
+}
+.row_get-started {
+    padding: 30px;
+    text-align: center;
+}
 
 
 
@@ -207,6 +215,11 @@ main {
         padding: 20px;
     }
 
+    /* Get started */
+    .container_get-started {
+        width: 600px;
+        margin: 0 auto;
+    }
 
 
 }
@@ -244,5 +257,11 @@ main {
     .container_about-us {
         width: 1100px;
     }
+
+    /* Get started */
+    .container_get-started {
+        width: 800px;
+    }
+
 }
 
