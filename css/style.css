@@ -34,7 +34,7 @@ img {
 }
 
 .card {
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     background-color: #b5ddff;
     text-align: center;
     border-radius: 15px;   
@@ -91,6 +91,13 @@ header {
     border-radius: 25px;
 }
 
+.button {
+    color: white;
+    padding: 10px 40px;
+    border-radius: 25px;
+}
+
+
 /*
 
 -- Main
@@ -111,6 +118,47 @@ main {
 .cards_service> img {
     width: 100%;
 }
+.cards_service {
+    display: flex;
+    text-align: left;
+    line-height: 40px;
+}
+
+.service .card {
+    font-weight: bold;
+}
+.service .card  h2 {
+    color: #0084fd;
+    margin-bottom: 30px;
+}
+.service .card p {
+    color: #5a6e7f;
+    margin-bottom: 30px;
+}
+
+.cards_service {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+    }
+.cards_service>img {
+        width: 80%;
+        align-self: center;
+     }
+
+.button_service {
+    background-color: #0084fd;
+}
+.service_text {
+    margin-bottom: 50px;
+    line-height: 3rem ;
+}
+
+.icon_service {
+    font-size: 80px;
+    color: #0084fd;
+    margin-bottom: 30px;
+}
 /* - Planning */
 
 .planning {
@@ -126,6 +174,7 @@ main {
     /* border-radius: 15%; */
     padding: 1rem;
 }
+
 
 /* - Testimonial */
 .row_testimonial {
@@ -210,9 +259,10 @@ footer {
     .card {
         height: 100%;
     }
-    .cards_service {
-        display: flex;
-        justify-content: space-around;
+    
+    .cards_service > img {
+        align-self: flex-start;
+        width: 50%;
     }
 
     /* Testimonials */
@@ -272,6 +322,18 @@ footer {
     .header_menu-desktop {
         display: block;
     }
+
+    /* Service */
+    .cards_service {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-around; */
+    }
+    .cards_service > img {
+            align-self: flex-end;
+            width: 80%;
+    }
+
     /* Planning */
     .planning {
         display: flex;
