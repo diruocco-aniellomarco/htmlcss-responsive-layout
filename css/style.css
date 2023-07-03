@@ -1,3 +1,6 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 * {
     margin: 0;
     padding: 0;
@@ -71,14 +74,22 @@ header {
 }
 .header_menu-desktop {
     display: none;
+    font-size: 1rem;
+    font-weight: bold;
 }
 .header_menu-desktop> ul {
     list-style: none;
 }
 .header_menu-desktop li {
     display: inline-block;
+    margin-left: 20px;
 }
-
+#button-menu {
+    color: black;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
 
 /*
 
