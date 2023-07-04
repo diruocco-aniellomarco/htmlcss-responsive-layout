@@ -374,9 +374,14 @@ footer {
 
 }
  .container_footer {
-    line-height: 50px;
+    line-height: 20px;
 }
-
+.container_footer .link {
+    color: #9792e4;
+}
+.container_footer>* {
+    margin-bottom: 50px;
+}
 /* 
 
 ----- Responsive 
@@ -464,7 +469,7 @@ footer {
 
     .container_small {
         width: 400px;
-        margin: 0 auto;
+        margin: 50px auto;
     }
 
 }
