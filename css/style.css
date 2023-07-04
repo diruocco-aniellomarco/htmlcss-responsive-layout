@@ -276,6 +276,51 @@ main {
     padding: 50px 30px;
 }
 
+.col__about-us{
+    line-height: 40px;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.col__about-us> * {
+    margin-bottom: 20px;
+}
+
+.col__about-us> h1 {
+    font-size: 3rem;
+    color: #9792e4;
+    font-weight: bold;
+}
+
+.col__about-us img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.img_about-us {
+    position: relative;
+} 
+.img_about-us> i {
+    color: #9792e4;
+    font-size: 4rem;
+    position: absolute;
+    top: 0;
+    right: 50%;
+} 
+
+.help_about-us {
+    font-size: 2rem;
+    color: #9792e4;
+}
+.button_abuot-us {
+    background-color: #9792e4;
+    font-size: 1rem;
+}
+
+
+
+
+
 
 /* -- Get started */
 .get-started {
@@ -370,7 +415,15 @@ footer {
     }
     .col__about-us {
         padding: 20px;
+        width: 50%
     }
+    .img_about-us> img {
+        width: 100%;
+    }
+    .img_about-us> i {
+        right: 0;
+    }
+
 
     /* Get started */
     .container_get-started {
@@ -453,7 +506,13 @@ footer {
     .container_about-us {
         width: 1100px;
     }
+    .col_text {
+        width: calc(( 100% / 3) * 2);
+    }
 
+    .col_img {
+        width: calc( 100% / 3);
+    }
     /* Get started */
     .container_get-started {
         width: 800px;
