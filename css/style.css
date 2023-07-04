@@ -39,12 +39,11 @@ img {
     text-align: center;
     border-radius: 15px;   
 }
-/*
------------------ DEBUG 
-*/
 
-.border {
-    border: 1px dashed red;
+
+.link {
+    text-decoration: underline;
+    
 }
 
 
@@ -249,7 +248,7 @@ main {
 .number_benefits {
     color: #9792e4;
     font-weight: bold;
-    /* margin-bottom: 30px; */
+    
 }
 .number_benefits {
     font-size: 4rem;
@@ -327,10 +326,40 @@ main {
     background-color: #9792e4;
     color: white;
 }
-.row_get-started {
-    padding: 30px;
+
+.container_get-started {
     text-align: center;
+    padding: 30px;
+    line-height: 90px;
 }
+
+.container_get-started> h3 {
+    color: #d5d4f4;
+}
+
+.container_get-started> h2 {
+    font-size: 2rem;    
+}
+
+.container_get-started> strong {
+    font-size: 5rem;
+    color: #fdc15f;    
+}
+.container_get-started .container_small {
+    line-height: 30px;
+}
+
+.button_get-started {
+    color: #9792e4;
+    background-color: white;
+    padding: 20px 90px;
+    border-radius: 35px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+
 
 /* 
 
@@ -341,10 +370,11 @@ footer {
     background-color: #333333;
     color: white;
     padding: 50px;
+    text-align: center;
 
 }
  .container_footer {
-    width: 100%;
+    line-height: 50px;
 }
 
 /* 
@@ -432,7 +462,7 @@ footer {
     }
     /* footer */
 
-    .container_footer{
+    .container_small {
         width: 400px;
         margin: 0 auto;
     }
