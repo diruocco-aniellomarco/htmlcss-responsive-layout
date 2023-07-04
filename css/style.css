@@ -230,21 +230,43 @@ main {
 /* -- Benefits */
 .row_title {
     text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .row_benefits{
     padding: 50px 30px;
-
 }
-
+.card_benefits> * {
+    margin-bottom: 30px;
+}
 .card_benefits {
     margin: 30px 0;
-    
+    line-height: 40px; 
+    text-align: left;   
+}
+.card_benefits> h2,
+.number_benefits {
+    color: #9792e4;
+    font-weight: bold;
+    /* margin-bottom: 30px; */
+}
+.number_benefits {
+    font-size: 4rem;
 }
 
 .benefits {
     background-color: #9593e6;
     color: white;;
+}
+
+.row_benefits .card_benefits{
+    border-radius: 15px;
+}
+
+.card_benefits .button {
+    background-color: #9792e4;
+    margin-bottom: 0;
 }
 
 
@@ -333,7 +355,11 @@ footer {
         gap: 30px;
     }
     .card_benefits {
-        width: calc(( 100% - 30px ) / 2 )
+        width: calc(( 100% - 30px ) / 2 );
+        margin: 0;
+    }
+    .card-white {
+        margin: 0;
     }
     
     /* -- About Us */
